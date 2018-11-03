@@ -11,7 +11,7 @@ public:
 		errortype = type;
 	}
 	const char* what() const throw() {
-		std::cout << "Íåâåðíûé òèï ôàéëà! (" << errortype << ")";
+		std::cout << "ÐÐµÐ²ÐµÑ€Ð½Ñ‹Ð¹ Ñ‚Ð¸Ð¿ Ñ„Ð°Ð¹Ð»Ð°! (" << errortype << ")";
 		return "";
 	}
 };
@@ -23,7 +23,7 @@ public:
 		errorfile = filename;
 	}
 	const char* what() const throw() {
-		std::cout << "Ôàéë íå íàéäåí! (" << errorfile << ")";
+		std::cout << "Ð¤Ð°Ð¹Ð» Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½! (" << errorfile << ")";
 		return "";
 	}
 };
