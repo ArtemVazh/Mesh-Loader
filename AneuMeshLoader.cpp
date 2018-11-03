@@ -46,9 +46,9 @@ void AneuMeshLoader::Output() {
 		LoadMesh();
 	int size = Nodes.size();
 	int dimension = Nodes[0].coordinates.size();
-	std::cout << "Êîëè÷åñòâî óçëîâ: " << size << " Ðàçìåðíîñòü ïðîñòðàíñòâà: " << dimension << std::endl;
+	std::cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑƒÐ·Ð»Ð¾Ð²: " << size << " Ð Ð°Ð·Ð¼ÐµÑ€Ð½Ð¾ÑÑ‚ÑŒ Ð¿Ñ€Ð¾ÑÑ‚Ñ€Ð°Ð½ÑÑ‚Ð²Ð°: " << dimension << std::endl;
 	for (int i = 0; i < size; ++i) {
-		std::cout << "ID óçëà: " << Nodes[i].ID << "; Êîîðäèíàòû óçëà: ";
+		std::cout << "ID ÑƒÐ·Ð»Ð°: " << Nodes[i].ID << "; ÐšÐ¾Ð¾Ñ€Ð´Ð¸Ð½Ð°Ñ‚Ñ‹ ÑƒÐ·Ð»Ð°: ";
 		if (dimension == 3) {
 			std::cout << "x = " << Nodes[i].coordinates[0] << ", y = " << Nodes[i].coordinates[1] << ", z = " << Nodes[i].coordinates[2];
 		}
@@ -60,9 +60,9 @@ void AneuMeshLoader::Output() {
 	std::cout << std::endl;
 	size = Elements.size();
 	dimension = Elements[0].KnotsID.size();
-	std::cout << "Êîëè÷åñòâî ÊÝ: " << size << "; Êîëè÷åñòâî óçëîâ â îäíîì ÊÝ: " << dimension << std::endl;
+	std::cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÐšÐ­: " << size << "; ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑƒÐ·Ð»Ð¾Ð² Ð² Ð¾Ð´Ð½Ð¾Ð¼ ÐšÐ­: " << dimension << std::endl;
 	for (int i = 0; i < size; ++i) {
-		std::cout << "ID ìàòåðèàëà: " << Elements[i].MaterialType << "; ID ÊÝ: " << Elements[i].ID << "; ID óçëîâ: ";
+		std::cout << "ID Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð»Ð°: " << Elements[i].MaterialType << "; ID ÐšÐ­: " << Elements[i].ID << "; ID ÑƒÐ·Ð»Ð¾Ð²: ";
 		for (int j = 0; j < dimension; ++j)
 			std::cout << Elements[i].KnotsID[j] << " ";
 		std::cout << std::endl;
@@ -70,9 +70,9 @@ void AneuMeshLoader::Output() {
 	std::cout << std::endl;
 	size = Surfaces.size();
 	dimension = Surfaces[0].KnotsID.size();
-	std::cout << "Êîëè÷åñòâî ïîâ. ÊÝ: " << size << "; Êîëè÷åñòâî óçëîâ â îäíîì ïîâ. ÊÝ: " << dimension << std::endl;
+	std::cout << "ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ Ð¿Ð¾Ð². ÐšÐ­: " << size << "; ÐšÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑƒÐ·Ð»Ð¾Ð² Ð² Ð¾Ð´Ð½Ð¾Ð¼ Ð¿Ð¾Ð². ÐšÐ­: " << dimension << std::endl;
 	for (int i = 0; i < size; ++i) {
-		std::cout << "ID ïîâåðõíîñòè: " << Surfaces[i].ID << "; ID ïîâ-òè ñ äàííûìè ãð.óñë: " << Surfaces[i].IDSurfaceBC << "; ID óçëîâ: ";
+		std::cout << "ID Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð¸: " << Surfaces[i].ID << "; ID Ð¿Ð¾Ð²-Ñ‚Ð¸ Ñ Ð´Ð°Ð½Ð½Ñ‹Ð¼Ð¸ Ð³Ñ€.ÑƒÑÐ»: " << Surfaces[i].IDSurfaceBC << "; ID ÑƒÐ·Ð»Ð¾Ð²: ";
 		for (int j = 0; j < dimension; ++j)
 			std::cout << Surfaces[i].KnotsID[j] << " ";
 		std::cout << std::endl;
