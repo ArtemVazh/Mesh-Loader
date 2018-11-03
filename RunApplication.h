@@ -5,24 +5,24 @@
 
 int Menu() {
 	int choose;
-	std::cout << "Ìåíþ:" << std::endl;
-	std::cout << "1 - çàãðóçèòü ñåòêó" << std::endl;
-	std::cout << "2 - âûâåñòè ñåòêó" << std::endl;
-	std::cout << "3 - íàéòè ÊÝ ïî ID òðåõ åãî âåðøèííûõ óçëîâ" << std::endl;
-	std::cout << "4 - íàéòè ÊÝ ïî ðåáðó" << std::endl;
-	std::cout << "5 - ñîçäàòü êîíòåéíåð ïîâåðõíîñòíûõ óçëîâ ïî ID ïîâåðõíîñòè" << std::endl;
-	std::cout << "6 - ñîçäàòü êîíòåéíåð ÊÝ ñ çàäàííûì ID ìàòåðèàëà" << std::endl;
-	std::cout << "7 - ñîçäàòü êîíòåéíåð ïîâåðõíîñòíûõ ÊÝ ñ çàäàííûì ID ïîâåðõíîñòè" << std::endl;
-	std::cout << "8 - ïðåîáðàçîâàòü ñèìïëåêñíûå òåòðàýäðàëüíûå ÊÝ â êâàäðàòè÷íûå ïóòåì âíåñåíèÿ íîâûõ óçëîâ â çàãðóæåííóþ ÊÝ ñåòêó" << std::endl;
-	std::cout << "9 - ñîçäàòü êîíòåéíåð, n-ûé ýëåìåíò êîòîðîãî õðàíèò êîíòåéíåð âñåõ «ñîñåäåé» äëÿ óçëà n" << std::endl;
-	std::cout << "10 - âûõîä" << std::endl;
+	std::cout << "ÐœÐµÐ½ÑŽ:" << std::endl;
+	std::cout << "1 - Ð·Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ ÑÐµÑ‚ÐºÑƒ" << std::endl;
+	std::cout << "2 - Ð²Ñ‹Ð²ÐµÑÑ‚Ð¸ ÑÐµÑ‚ÐºÑƒ" << std::endl;
+	std::cout << "3 - Ð½Ð°Ð¹Ñ‚Ð¸ ÐšÐ­ Ð¿Ð¾ ID Ñ‚Ñ€ÐµÑ… ÐµÐ³Ð¾ Ð²ÐµÑ€ÑˆÐ¸Ð½Ð½Ñ‹Ñ… ÑƒÐ·Ð»Ð¾Ð²" << std::endl;
+	std::cout << "4 - Ð½Ð°Ð¹Ñ‚Ð¸ ÐšÐ­ Ð¿Ð¾ Ñ€ÐµÐ±Ñ€Ñƒ" << std::endl;
+	std::cout << "5 - ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð½Ñ‹Ñ… ÑƒÐ·Ð»Ð¾Ð² Ð¿Ð¾ ID Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð¸" << std::endl;
+	std::cout << "6 - ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ ÐšÐ­ Ñ Ð·Ð°Ð´Ð°Ð½Ð½Ñ‹Ð¼ ID Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð»Ð°" << std::endl;
+	std::cout << "7 - ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð½Ñ‹Ñ… ÐšÐ­ Ñ Ð·Ð°Ð´Ð°Ð½Ð½Ñ‹Ð¼ ID Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð¸" << std::endl;
+	std::cout << "8 - Ð¿Ñ€ÐµÐ¾Ð±Ñ€Ð°Ð·Ð¾Ð²Ð°Ñ‚ÑŒ ÑÐ¸Ð¼Ð¿Ð»ÐµÐºÑÐ½Ñ‹Ðµ Ñ‚ÐµÑ‚Ñ€Ð°ÑÐ´Ñ€Ð°Ð»ÑŒÐ½Ñ‹Ðµ ÐšÐ­ Ð² ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚Ð¸Ñ‡Ð½Ñ‹Ðµ Ð¿ÑƒÑ‚ÐµÐ¼ Ð²Ð½ÐµÑÐµÐ½Ð¸Ñ Ð½Ð¾Ð²Ñ‹Ñ… ÑƒÐ·Ð»Ð¾Ð² Ð² Ð·Ð°Ð³Ñ€ÑƒÐ¶ÐµÐ½Ð½ÑƒÑŽ ÐšÐ­ ÑÐµÑ‚ÐºÑƒ" << std::endl;
+	std::cout << "9 - ÑÐ¾Ð·Ð´Ð°Ñ‚ÑŒ ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€, n-Ñ‹Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ ÐºÐ¾Ñ‚Ð¾Ñ€Ð¾Ð³Ð¾ Ñ…Ñ€Ð°Ð½Ð¸Ñ‚ ÐºÐ¾Ð½Ñ‚ÐµÐ¹Ð½ÐµÑ€ Ð²ÑÐµÑ… Â«ÑÐ¾ÑÐµÐ´ÐµÐ¹Â» Ð´Ð»Ñ ÑƒÐ·Ð»Ð° n" << std::endl;
+	std::cout << "10 - Ð²Ñ‹Ñ…Ð¾Ð´" << std::endl;
 	std::cin >> choose;
 	return choose;
 }
 
 void Run() {
 	setlocale(0, "russian");
-	std::cout << "Ââåäèòå íàçâàíèå ôàéëà" << std::endl;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ Ñ„Ð°Ð¹Ð»Ð°" << std::endl;
 	std::string filename;
 	std::cin >> filename;
 	std::string filetype = filename.substr(filename.find("."), (filename.size() - filename.find(".")));
@@ -42,63 +42,63 @@ void Run() {
 			break;
 		}
 		case 3: {
-			std::cout << "Ââåäèòå ID òð¸õ âåðøèí" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ID Ñ‚Ñ€Ñ‘Ñ… Ð²ÐµÑ€ÑˆÐ¸Ð½" << std::endl;
 			int ID1, ID2, ID3;
 			std::cin >> ID1 >> ID2 >> ID3;
 			std::list<Element> FEs = AnueMesh->FindFE(ID1, ID2, ID3);
-			std::cout << "Íàéäåííûå ÊÝ" << std::endl;
+			std::cout << "ÐÐ°Ð¹Ð´ÐµÐ½Ð½Ñ‹Ðµ ÐšÐ­" << std::endl;
 			if (FEs.size() != 0)
 				std::for_each(FEs.begin(), FEs.end(), [=](Element elem) {std::cout << elem.ID << " "; });
 			else
-				std::cout << "ÊÝ íå íàéäåíû!" << std::endl;
+				std::cout << "ÐšÐ­ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹!" << std::endl;
 			break;
 		}
 		case 4: {
-			std::cout << "Ââåäèòå ID äâóõ âåðøèí" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ID Ð´Ð²ÑƒÑ… Ð²ÐµÑ€ÑˆÐ¸Ð½" << std::endl;
 			int ID1, ID2;
 			std::cin >> ID1 >> ID2;
 			std::list<Element> FEs = AnueMesh->FindFE(ID1, ID2);
-			std::cout << "Íàéäåííûå ÊÝ: " << std::endl;
+			std::cout << "ÐÐ°Ð¹Ð´ÐµÐ½Ð½Ñ‹Ðµ ÐšÐ­: " << std::endl;
 			if (FEs.size() != 0)
 				std::for_each(FEs.begin(), FEs.end(), [=](Element elem) {std::cout << elem.ID << " "; });
 			else
-				std::cout << "ÊÝ íå íàéäåíû!" << std::endl;
+				std::cout << "ÐšÐ­ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹!" << std::endl;
 			break;
 		}
 		case 5: {
-			std::cout << "Ââåäèòå ID ïîâåðõíîñòè" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ID Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð¸" << std::endl;
 			int ID;
 			std::cin >> ID;
 			std::set<int> IDs = AnueMesh->GetSurfacesID(ID);
-			std::cout << "Íàéäåííûå ïîâåðõíîñòíûå óçëû: " << std::endl;
+			std::cout << "ÐÐ°Ð¹Ð´ÐµÐ½Ð½Ñ‹Ðµ Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð½Ñ‹Ðµ ÑƒÐ·Ð»Ñ‹: " << std::endl;
 			if (IDs.size() != 0)
 				std::for_each(IDs.begin(), IDs.end(), [=](int ID) {std::cout << ID << " "; });
 			else
-				std::cout << "Ïîâåðõíîñòè íå íàéäåíû!" << std::endl;
+				std::cout << "ÐŸÐ¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð¸ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹!" << std::endl;
 			break;
 		}
 		case 6: {
-			std::cout << "Ââåäèòå ID ìàòåðèàëà" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ID Ð¼Ð°Ñ‚ÐµÑ€Ð¸Ð°Ð»Ð°" << std::endl;
 			int ID;
 			std::cin >> ID;
 			std::vector<Element> FEs = AnueMesh->GetElementsByMaterialType(ID);
-			std::cout << "Íàéäåííûå ÊÝ: " << std::endl;
+			std::cout << "ÐÐ°Ð¹Ð´ÐµÐ½Ð½Ñ‹Ðµ ÐšÐ­: " << std::endl;
 			if (FEs.size() != 0)
 				std::for_each(FEs.begin(), FEs.end(), [=](Element elem) {std::cout << elem.ID << " "; });
 			else
-				std::cout << "ÊÝ íå íàéäåíû!" << std::endl;
+				std::cout << "ÐšÐ­ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹!" << std::endl;
 			break;
 		}
 		case 7: {
-			std::cout << "Ââåäèòå ID ïîâåðõíîñòè ñ äàííûìè ãð.óñë" << std::endl;
+			std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ID Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð¸ Ñ Ð´Ð°Ð½Ð½Ñ‹Ð¼Ð¸ Ð³Ñ€.ÑƒÑÐ»" << std::endl;
 			int ID;
 			std::cin >> ID;
 			std::vector<Surface> FEs = AnueMesh->GetSurfacesBySurfaceID(ID);
-			std::cout << "Íàéäåííûå ïîâåðõíîñòíûå ÊÝ ñ äàííûìè ãð.óñë: " << std::endl;
+			std::cout << "ÐÐ°Ð¹Ð´ÐµÐ½Ð½Ñ‹Ðµ Ð¿Ð¾Ð²ÐµÑ€Ñ…Ð½Ð¾ÑÑ‚Ð½Ñ‹Ðµ ÐšÐ­ Ñ Ð´Ð°Ð½Ð½Ñ‹Ð¼Ð¸ Ð³Ñ€.ÑƒÑÐ»: " << std::endl;
 			if (FEs.size() != 0)
 				std::for_each(FEs.begin(), FEs.end(), [=](Surface elem) {std::cout << elem.ID << " "; });
 			else
-				std::cout << "ÊÝ íå íàéäåíû!" << std::endl;
+				std::cout << "ÐšÐ­ Ð½Ðµ Ð½Ð°Ð¹Ð´ÐµÐ½Ñ‹!" << std::endl;
 			break;
 		}
 		case 8: {
@@ -107,10 +107,10 @@ void Run() {
 		}
 		case 9: {
 			std::vector<std::set<int>> Neighbors = AnueMesh->GetNodeNeighbors();
-			std::cout << "Íàéäåííûå ñîñåäè êàæäîãî óçëà: " << std::endl;
+			std::cout << "ÐÐ°Ð¹Ð´ÐµÐ½Ð½Ñ‹Ðµ ÑÐ¾ÑÐµÐ´Ð¸ ÐºÐ°Ð¶Ð´Ð¾Ð³Ð¾ ÑƒÐ·Ð»Ð°: " << std::endl;
 			int size = Neighbors.size();
 			for (int i = 0; i < size; ++i) {
-				std::cout << std::endl << "Äëÿ óçëà: " << i + 1 << std::endl;
+				std::cout << std::endl << "Ð”Ð»Ñ ÑƒÐ·Ð»Ð°: " << i + 1 << std::endl;
 				std::for_each(Neighbors[i].begin(), Neighbors[i].end(), [=](int id) {std::cout << id << " "; });
 			}
 			break;
